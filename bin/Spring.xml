@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans SYSTEM "https://www.springframework.org/dtd/spring-beans-2.0.dtd" PUBLIC "-//SPRING//DTD BEAN 2.0//EN">
+<beans>
+
+<bean id = "triangle "  class = "org.mohamed.com.Triangle">
+<property name = "PointA "       ref = "ZeroPoint"/>
+<property name = "PointB "       ref = "Point2"/>
+<property name = "PointC "       ref = "Point3"/>
+
+</beans>
+
+<bean id = "ZeroPoint" class ="org.mohamed.Point" >
+<property name = "x"       value ="0"/>
+<property name  = "y"     value ="0"/>
+</beans>
+<bean id = "Point2" class ="org.mohamed.Point" >
+<property name = "x"       value ="-20"/>
+<property name  = "y"     value ="0"/>
+</beans>
+<bean id = "Point3" class ="org.mohamed.Point" >
+<property name = "x"       value ="20"/>
+<property name  = "y"     value ="0"/>
+</beans>
+
+</beans>
